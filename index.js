@@ -16,6 +16,9 @@ const tasks = [
 ];
 const app = express();
 const PORT = 4000;
+
+// Application-Level MiddleWare:
+
 app.get("/", (req, res) => {
   res.status(200).send(tasks);
 });
